@@ -1301,6 +1301,10 @@ public class HorizontalPicker extends View {
         @Override
         protected void onPopulateNodeForVirtualView(int virtualViewId, AccessibilityNodeInfoCompat node) {
 
+            if (virtualViewId >= mPicker.values.length) {
+                return;
+            }
+
             float itemWidth = mPicker.itemWidth + mPicker.dividerSize;
             float scrollOffset = mPicker.getScrollX() - itemWidth * mPicker.sideItems;
 
