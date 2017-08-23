@@ -1,1 +1,1 @@
-include ':HorizontalPicker', ':HorizontalPickerExample'
+include ':HorizontalPickerLibrary', ':HorizontalPickerExample'
